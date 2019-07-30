@@ -1,2 +1,2 @@
-# _docker_contianer_app
+# _docker_container_app
 Using docker to containerize Meanstack application
