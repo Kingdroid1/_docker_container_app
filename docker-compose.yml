@@ -1,0 +1,21 @@
+# specify docker-compose version
+version: "3.7" 
+
+# define the services/containers to run
+services: 
+  angular:
+    build: ng-client/my-app
+    ports:
+      - "4200:4200"
+
+  api:
+    build: node-api-server
+    ports: 
+      - "9000:9000"
+    links:
+      - database
+    restart: on-failure
+
+  database:
+    image: mongo
+    ports: ["27017:27017"]

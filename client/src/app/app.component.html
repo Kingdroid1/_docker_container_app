@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center; color: orangered;">
+
+  <h1>
+      {{welcome}}
+  </h1>
+
+  <div class="form-container">
+
+    <form [formGroup]="signupForm">
+      <label for="firstname">First Name</label><br/>
+      <input type="text" name="firstname" formControlName="firstname" [(ngModel)]="Txtfirstname" class="form-control" required><br/>
+      <label for="lastname">Last Name</label><br/>
+      <input type="text" name="lastname" formControlName="lastname" [(ngModel)]="Txtlastname" class="form-control" required><br/>
+      <label for="gender">Gender</label><br/>
+      <input type="text" name="gender" formControlName="gender" [(ngModel)]="Txtgender" class="form-control" required><br/>
+      <label for="designation">Designation</label><br/>
+      <input type="text" name="designation" formControlName="designation" [(ngModel)]="Txtdesignation" class="form-control" required><br/>
+      <label for="location">Location</label><br/>
+      <input type="text" name="location" formControlName="location" [(ngModel)]="Txtlocation" class="form-control" required><br/>
+      <button [disabled]="!signupForm.valid" type="submit" mat-raised-button (click)="submit()">Add Employee</button>
+    </form>
+
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

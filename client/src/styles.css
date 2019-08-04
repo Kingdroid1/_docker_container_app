@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+.form-container input{
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container label{
+  margin-bottom: 1%;
+  margin-right: 35%;
+  font-family: Verdana;
+  font-weight: 500;
+}
+button {
+width: 20%;
+padding: 10px;
+border-radius: 2px;
+color: #000000;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 700;
+cursor: pointer;
+}
